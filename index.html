@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Your First Day ❤️</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fff8f0;
+      text-align: center;
+      padding-top: 100px;
+    }
+    .letter {
+      background: #fff;
+      border: 2px solid #dcb;
+      padding: 40px;
+      width: 300px;
+      margin: auto;
+      box-shadow: 2px 2px 10px #ccc;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .letter:hover {
+      transform: scale(1.02);
+    }
+    .hidden-content {
+      display: none;
+      margin-top: 20px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+    .congrats {
+      font-size: 1.1em;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="letter" onclick="showContent()">
+    📩 Click to Open Your Letter
+  </div>
+
+  <div class="hidden-content" id="hidden">
+    <p class="congrats">Dear Cecil,<br><br>
+    Today you begin your journey again as a teacher — a true guide, a mentor, and an inspiration. Keep sharing the happiness, knowledge and positivity from you. ❤️<br><br>
+    With care in mind,<br>
+    Jn🐹</p>
+    <img src="congrats.jpg" alt="Congratulations">
+  </div>
+
+  <script>
+    function showContent() {
+      document.getElementById('hidden').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
